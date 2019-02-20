@@ -1,5 +1,5 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [More info](more-info.md)
+* [Installation](more-info.md)
 
