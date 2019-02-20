@@ -154,3 +154,21 @@ The second reason is that code editors are specialized for editing code, so they
 
 We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :\)
 
+## Install Git <a id="install-git"></a>
+
+Git is a "version control system" used by a lot of programmers. This software can track changes to files over time so that you can recall specific versions later. A bit like the "track changes" feature in word processor programs \(e.g., Microsoft Word\), but much more powerful.
+
+Download and install git from here: [https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+NB! Windows users might need to restart \(close and open again\) command line terminal after every product's installation.
+
+## Create a GitHub account <a id="create-a-github-account"></a>
+
+Github is an online-storage for the code you \(and millions of other developers!\) will produce. It is also a kind of social network for developers, where instead of photos from last vacation they share code, comment each other's code and even have an arguments!
+
+Go to [GitHub.com](https://www.github.com/) and sign up for a new, free user account. Be sure to remember your password \(add it to your password manager, if you use one\).
+
+## Create a Heroku account
+
+Heroku is a hosting which is free for hobby-type of projects \(this is exactly what our project is going to be!\). Go to [https://signup.heroku.com/](https://signup.heroku.com/) and sign up for user account. Please, also do bother to remember your username and password :\)
+
