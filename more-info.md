@@ -99,6 +99,40 @@ v10.15.1
 {% endtab %}
 {% endtabs %}
 
+## Install NPM
+
+NPM is a package manager for the JavaScript programming language. You can think of packages as a small \(and big!\) programs, which someone else wrote and we can use. 
+
+Once you've installed NodeJS, you should have NPM already installed for you, but we need to make sure that there is a correct version of it.
+
+To do that, just run in terminal:
+
+{% tabs %}
+{% tab title="MacOS" %}
+```text
+npm install npm@6.8.0 -g
+```
+{% endtab %}
+
+{% tab title="Windows" %}
+```
+npm install npm@6.8.0 -g
+```
+{% endtab %}
+{% endtabs %}
+
+Then in command line type:
+
+```text
+npm -v
+```
+
+You should see this as a response:
+
+```text
+6.8.0
+```
+
 ## Install a code editor <a id="install-a-code-editor"></a>
 
 There are a lot of different editors and it largely boils down to personal preference. Most programmers use complex but extremely powerful IDEs \(Integrated Development Environments\), such as VSCode. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
