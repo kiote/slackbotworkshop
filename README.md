@@ -4,16 +4,14 @@ description: whatever comes here
 
 # Introduction
 
-## Getting Super Powers
+## Welcome
 
-Becoming a super hero is a fairly straight forward process:
+Welcome to the Programming for non-programmers tutorial! We are happy to see you here :\) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
-```text
-$ give me super-powers2
-```
+As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :\)
 
 {% hint style="info" %}
-Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+This workshop based on [Django Girls Tutorial](https://tutorial.djangogirls.org/en/)
 {% endhint %}
 
 Once you're strong enough, save the world:
@@ -22,4 +20,6 @@ Once you're strong enough, save the world:
 // Ain't no code for that yet, sorry
 echo 'You got to trust me on this, I saved the world'
 ```
+
+
 
