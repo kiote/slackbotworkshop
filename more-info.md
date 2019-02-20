@@ -57,7 +57,7 @@ If previous sentence made no sense for you, please start with [this page](https:
 {% tabs %}
 {% tab title="MacOS" %}
 1. Download nodeJS distributive [here](https://nodejs.org/dist/v10.15.1/node-v10.15.1.pkg)
-2. Open the command line \(if you have no clue, read [this](https://kiote1.gitbook.io/slackbotworkshop/~/drafts/-LZ9oZ1zsvxmvkO4i5nG/primary/more-info#brief-intro-to-the-command-line) again\)
+2. Open the command line \(if you have no clue, read [this](https://kiote1.gitbook.io/slackbotworkshop/more-info#brief-intro-to-the-command-line) again\)
 3. In the command line type:
 
 ```text
