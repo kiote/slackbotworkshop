@@ -48,3 +48,65 @@ Later in this tutorial, you will need to have two command windows open at the sa
 {% endtab %}
 {% endtabs %}
 
+## Install NodeJS
+
+Node.js lets developers use JavaScript for [server-side scripting](https://en.wikipedia.org/wiki/Server-side_scripting)—running scripts server-side to produce [dynamic web page](https://en.wikipedia.org/wiki/Dynamic_web_page) content before the page is sent to the user's web browser.
+
+If previous sentence made no sense for you, please start with [this page](https://tutorial.djangogirls.org/en/how_the_internet_works/) :D
+
+{% tabs %}
+{% tab title="MacOS" %}
+1. Download nodeJS distributive [here](https://nodejs.org/dist/v10.15.1/node-v10.15.1.pkg)
+2. Open the command line \(if you have no clue, read [this](https://kiote1.gitbook.io/slackbotworkshop/~/drafts/-LZ9oZ1zsvxmvkO4i5nG/primary/more-info#brief-intro-to-the-command-line) again\)
+3. In the command line type:
+
+```text
+node -v
+```
+
+4. Hit "Enter"
+
+5. You should see this response:
+
+```text
+v10.15.1
+```
+
+Something like that:
+
+```text
+➜ node -v
+v10.15.1
+```
+{% endtab %}
+
+{% tab title="Windows" %}
+1. Download nodeJS distributive [here](https://nodejs.org/dist/v10.15.1/node-v10.15.1-x64.msi)
+2. Open the command line \(if you have no clue, read [this](https://kiote1.gitbook.io/slackbotworkshop/~/drafts/-LZ9oZ1zsvxmvkO4i5nG/primary/more-info#brief-intro-to-the-command-line) again\)
+3. In the command line type:
+
+```text
+node -v
+```
+
+4. Hit "Enter"
+
+5. You should see this response:
+
+```text
+v10.15.1
+```
+{% endtab %}
+{% endtabs %}
+
+## Install a code editor <a id="install-a-code-editor"></a>
+
+There are a lot of different editors and it largely boils down to personal preference. Most programmers use complex but extremely powerful IDEs \(Integrated Development Environments\), such as VSCode. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+
+### Atom
+
+Atom is popular editor. It's free, open-source and available for Windows, OS X and Linux. 
+
+[Download it here](https://atom.io/)  
+
+
