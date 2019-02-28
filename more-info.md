@@ -133,7 +133,9 @@ You should see this as a response:
 6.8.0
 ```
 
+{% hint style="danger" %}
 If you see something like "ERROR" and a lot of confusing text after running "npm install npm@6.8.0 -g" command, try to run it again with "sudo": "sudo npm install npm@6.8.0 -g". It will ask for your password.
+{% endhint %}
 
 ## Install a code editor <a id="install-a-code-editor"></a>
 
