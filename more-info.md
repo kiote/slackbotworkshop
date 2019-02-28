@@ -164,7 +164,13 @@ Git is a "version control system" used by a lot of programmers. This software ca
 
 Download and install git from here: [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
-NB! Windows users might need to restart \(close and open again\) command line terminal after every product's installation.
+{% hint style="info" %}
+Windows users might need to restart \(close and open again\) command line terminal after every product's installation.
+{% endhint %}
+
+{% hint style="danger" %}
+if you are using MacOS, it might have restrictions for installing some software. In that case try to follow this instruction: [https://codeburst.io/installing-git-for-the-first-time-on-mac-osx-bf9c513af2b8](https://codeburst.io/installing-git-for-the-first-time-on-mac-osx-bf9c513af2b8)
+{% endhint %}
 
 ## Create a GitHub account <a id="create-a-github-account"></a>
 
