@@ -133,6 +133,8 @@ You should see this as a response:
 6.8.0
 ```
 
+If you see something like "ERROR" and a lot of confusing text after running "npm install npm@6.8.0 -g" command, try to run it again with "sudo": "sudo npm install npm@6.8.0 -g". It will ask for your password.
+
 ## Install a code editor <a id="install-a-code-editor"></a>
 
 There are a lot of different editors and it largely boils down to personal preference. Most programmers use complex but extremely powerful IDEs \(Integrated Development Environments\), such as VSCode. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
