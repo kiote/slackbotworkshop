@@ -1,5 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Installation](more-info.md)
+* [Installation](installation.md)
+* [Configuring Slack](configuring-slack.md)
+* [Untitled](untitled.md)
 
