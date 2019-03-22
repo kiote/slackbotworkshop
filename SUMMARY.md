@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Installation](installation.md)
 * [Configuring Slack](configuring-slack.md)
+* [Github project configuration](github-project-config.md)
 * [Heroku setup](heroku-setup.md)
 * [Tips for coaches](coaches.md)
 
