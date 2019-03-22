@@ -26,7 +26,7 @@ Choose OAuth and Permissions menu item:
 
 Add this permission:
 
-![](.gitbook/assets/screenshot-2019-03-22-at-09.12.08%20%281%29.png)
+![](.gitbook/assets/screenshot-2019-03-22-at-09.12.08.png)
 
 This will allow bot to read messages, addressed to him.
 
