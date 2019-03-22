@@ -24,7 +24,7 @@ npm install
 
 with this two commands we've initialised empty project, which does nothing so far.
 
-## Create main program to run
+## Create main program
 
 ### Create empty file
 
@@ -71,10 +71,12 @@ You can find out more if you google "express nodejs" and "body-parser nodejs"
 After that, add these lines to your main.js:
 
 ```text
-const listener = app.listen(process.env.PORT, function () {
+const listener = app.listen(process.env.PORT || '3000', function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
 ```
+
+These lines are saying that your application will be a web application \(so it would be able to operate through the internet\).
 
 ### Trying to run for the first time!
 
@@ -112,5 +114,99 @@ This error says, that you declared the module "express", but you don't have it a
 npm install express -s
 ```
 
-Try to run your 
+Try to run your program again \(in command line\):
+
+```text
+node main.js
+```
+
+This time you should see message like: "Your app is listening on port 3000"
+
+Congratulations! There is still way to go, but you are on the right path
+
+### Adding changes to git
+
+In command line, stop your app with hitting Ctrl+c on your keyboard. Now you need to add your first changes in this program to git:
+
+```text
+git add .
+git commit -am 'empty program'
+git push
+```
+
+### Add healthcheck endpoint
+
+At this point, our program should be already deployed to heroku, since we've configured autodeploy from master branch on "Heroku setup" step. But we have not that much ways to realise if it's actually running there. Just to be able to check that, we are going to add "/healthcheck" endpoint
+
+After first three lines add these lines to your main.js file:
+
+```text
+app.get('/healthcheck', function (req, res) {
+    const reply = {
+        "status": "ok"
+    };
+    res.json(reply);
+});
+```
+
+### Add changes to git
+
+In command line:
+
+```text
+git add .
+git commit -am 'add healthcheck'
+git push
+```
+
+### Check the health of your application
+
+in command line, run 
+
+```text
+node main.js
+```
+
+in browser, open: "localhost:3000/healthcheck", you should be able to see this page:
+
+![](.gitbook/assets/screenshot-2019-03-22-at-17.05.04.png)
+
+### Health check on heroku
+
+In order to be able to see your healthcheck page on heroku, you should add this line to "package.json" file \(open it in your code editor\):
+
+```text
+"start": "node main.js"
+```
+
+whole file should look like that now:
+
+```text
+{
+  "name": "slack-bot-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coingaming/slack-bot-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coingaming/slack-bot-workshop/issues"
+  },
+  "homepage": "https://github.com/coingaming/slack-bot-workshop#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
+
+```
+
+Commit your changes to git again, as described here:  [https://kiote1.gitbook.io/slackbotworkshop/time-to-code\#add-changes-to-git](https://kiote1.gitbook.io/slackbotworkshop/~/edit/drafts/-La_pLwdXIswY5VRgh-l/time-to-code#add-changes-to-git)
 
