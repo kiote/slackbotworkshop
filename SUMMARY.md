@@ -3,5 +3,5 @@
 * [Introduction](README.md)
 * [Installation](installation.md)
 * [Configuring Slack](configuring-slack.md)
-* [Untitled](untitled.md)
+* [Tips for coaches](untitled.md)
 
