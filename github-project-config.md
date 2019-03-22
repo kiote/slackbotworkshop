@@ -15,7 +15,7 @@ During this step, we will create and store out bot's source code \(program!\) in
 
 ![](.gitbook/assets/screenshot-2019-03-22-at-11.53.47.png)
 
-3. Choose the repository name, it doesn't really matter but would be better if you can use something self-describing, like "my-first-slack-bot" for example
+3. Choose the repository name, it doesn't really matter but would be better if you can use something self-describing, like "my-first-slack-bot"
 
 4. Click "initialise repository with a README". It is always a good idea to have a README in your project, with a short explanation what project does and how to use it
 
@@ -26,4 +26,33 @@ You should see something similar to this screenshot:
 ![](.gitbook/assets/screenshot-2019-03-22-at-11.58.32.png)
 
 If all set, click "Create repository"
+
+## Clone github repository
+
+1. Open command line
+2. Switch to github.com, after clicking "Create repository", you should see something like this:
+
+![](.gitbook/assets/screenshot-2019-03-22-at-15.53.46.png)
+
+3. Click on "Clone or download" green button
+
+4. Copy url starting with "git@..." by clicking on grey button from the field's right
+
+5. Switch back to command line and enter:
+
+```text
+git clone git@github.com:coingaming/slack-bot-workshop.git
+```
+
+6. Replace git@... with your own url, which you just have copied on the step 4, and press enter
+
+7. In command line, run 
+
+```text
+cd my-first-slack-bot
+```
+
+8. Hit enter
+
+9. Leave command line opened, we will need it on "Time to code!" step
 
