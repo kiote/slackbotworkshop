@@ -112,6 +112,7 @@ This error says, that you declared the module "express", but you don't have it a
 
 ```text
 npm install express -s
+npm install request -s
 ```
 
 Try to run your program again \(in command line\):
@@ -141,7 +142,7 @@ At this point, our program should be already deployed to heroku, since we've con
 After first three lines add these lines to your main.js file:
 
 ```text
-app.get('/healthcheck', function (req, res) {
+app.get('/', function (req, res) {
     const reply = {
         "status": "ok"
     };
@@ -208,5 +209,13 @@ whole file should look like that now:
 
 ```
 
-Commit your changes to git again, as described here:  [https://kiote1.gitbook.io/slackbotworkshop/time-to-code\#add-changes-to-git](https://kiote1.gitbook.io/slackbotworkshop/~/edit/drafts/-La_pLwdXIswY5VRgh-l/time-to-code#add-changes-to-git)
+Commit your changes to git again, as described here:  [https://kiote1.gitbook.io/slackbotworkshop/time-to-code\#add-changes-to-git](https://kiote1.gitbook.io/slackbotworkshop/time-to-code#add-changes-to-git), but change the commit message to "add start script"
+
+### Check the health
+
+Now go back to your heroku account, open just created app and find "Open app" button:
+
+![](.gitbook/assets/screenshot-2019-03-22-at-17.34.26.png)
+
+your app will be opened in a new tab, and you should be able to see "{"status": "ok"}"
 
