@@ -38,7 +38,7 @@ For your learners it may be the hardest thing they've ever done. Telling them th
 
 ### **No feigning surprise**
 
-Don't act surprised when people say they don't know something. Not knowing something \(technical or not\) is totally acceptable at Django Girls.
+Don't act surprised when people say they don't know something. Not knowing something \(technical or not\) is totally acceptable.
 
 Be prepared even for questions like: "What is a directory?" or "How do I create a file?".
 
@@ -58,7 +58,7 @@ Over the course of the tutorial you'll see that we're trying to first steer atte
 
 ## Learn that coding is fun
 
-The ultimate goal of the workshop is not to build a website. It is not to teach the whole of Django. It is also not to teach programming.
+The ultimate goal of the workshop is not to build a website. It is not to teach the whole of Node. It is also not to teach programming.
 
 The ultimate goal is to show that code is fun. **To get people excited.** To show them that programming is not scary and that it is for everyone. To show them how powerful programming skills can be.
 
