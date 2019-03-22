@@ -21,3 +21,19 @@ You'll see new application configuration page with a lot of details, but fear no
 
 ![](.gitbook/assets/screenshot-2019-03-22-at-12.03.06.png)
 
+## Connect with repository
+
+You'll see "Connect to Github" dialog, enter your repository name you've created on step "Github project configuration". Click search. When you see that repository was found, click "Connect"
+
+![](.gitbook/assets/screenshot-2019-03-22-at-12.10.31.png)
+
+## Enabling automatic deploys
+
+In real life, before deploy to live server, your application should go through auto- and manual- tests phases, but for sake to be able to finish this tutorial, we will simplify this process.
+
+In the "Automatic deploys" section make sure that you have "master" branch selected and click "Enable Automatic Deploys":
+
+![](.gitbook/assets/screenshot-2019-03-22-at-13.03.16.png)
+
+We are done here! Lets go to the next step:
+
