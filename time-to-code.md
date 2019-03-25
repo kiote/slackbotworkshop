@@ -33,7 +33,7 @@ From the same command line, run
 {% tabs %}
 {% tab title="Windows" %}
 ```text
-type nul >> main.js
+copy NUL main.js
 ```
 {% endtab %}
 
