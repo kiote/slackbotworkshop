@@ -36,3 +36,9 @@ Adding a subscription will allow new bot to receive information from Slack. Add 
 
 ![](.gitbook/assets/screenshot-2019-03-22-at-10.06.31.png)
 
+### Add bot user
+
+To be able to interact with users, your app should have bot user. Let's add it:
+
+![](.gitbook/assets/screenshot-2019-03-26-at-10.47.30.png)
+

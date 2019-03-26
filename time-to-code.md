@@ -62,6 +62,8 @@ Type this into your main.js:
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
 ```
 
 This three lines declares that you are going to use express server and body-parser. These are both programmes written by other developers and we just going to use them.
@@ -135,9 +137,15 @@ git commit -am 'empty program'
 git push
 ```
 
+{% hint style="info" %}
+We are going to refer this part very often, so when you see "add your changes to git" sentence, please execute the same commands in command line. You need to change text 'empty program' to whatever describes you are doing at the moment, for example 'new endpoint'
+{% endhint %}
+
 ### Add healthcheck endpoint
 
-At this point, our program should be already deployed to heroku, since we've configured autodeploy from master branch on "Heroku setup" step. But we have not that much ways to realise if it's actually running there. Just to be able to check that, we are going to add "/healthcheck" endpoint
+At this point, our program should be already deployed to heroku, since we've configured autodeploy from master branch on "Heroku setup" step. But we have not that much ways to realise if it's actually running there. Just to be able to check that, we are going to add "healthcheck" endpoint.
+
+Endpoints are just some type of urls which open different parts of your program in web browser.
 
 After first three lines add these lines to your main.js file:
 
@@ -150,7 +158,9 @@ app.get('/', function (req, res) {
 });
 ```
 
-### Add changes to git
+With this we are announcing that when user opens "/" \(or "root"\) of our program, he or she will see some text saying "status is ok".
+
+#### Add changes to git
 
 In command line:
 
@@ -160,7 +170,7 @@ git commit -am 'add healthcheck'
 git push
 ```
 
-### Check the health of your application
+#### Check the health of your application
 
 in command line, run 
 
@@ -168,11 +178,11 @@ in command line, run
 node main.js
 ```
 
-in browser, open: "localhost:3000/healthcheck", you should be able to see this page:
+in browser, open: "localhost:3000/", you should be able to see this page:
 
 ![](.gitbook/assets/screenshot-2019-03-22-at-17.05.04.png)
 
-### Health check on heroku
+#### Healthcheck on heroku
 
 In order to be able to see your healthcheck page on heroku, you should add this line to "package.json" file \(open it in your code editor\):
 
@@ -211,11 +221,31 @@ whole file should look like that now:
 
 Commit your changes to git again, as described here:  [https://kiote1.gitbook.io/slackbotworkshop/time-to-code\#add-changes-to-git](https://kiote1.gitbook.io/slackbotworkshop/time-to-code#add-changes-to-git), but change the commit message to "add start script"
 
-### Check the health
+#### Check the health
 
 Now go back to your heroku account, open just created app and find "Open app" button:
 
 ![](.gitbook/assets/screenshot-2019-03-22-at-17.34.26.png)
 
 your app will be opened in a new tab, and you should be able to see "{"status": "ok"}"
+
+### Create slack endpoint
+
+Now we need to create a part of the program, which will be interacting with slack. For that, we need a new endpoint, let's call it "action-endpoint". Add these lines after "/" endpoint definition:
+
+```text
+app.post('/action-endpoint', function (req, res) {
+  const challange = req.body.challange;
+  const reply = {
+      "challange": challange
+  };
+  res.json(reply);
+});
+```
+
+#### Connect this changes to Slack
+
+Add your changes to git. Now open in browser slack settings page and add your application url and new endpoint here:
+
+
 
