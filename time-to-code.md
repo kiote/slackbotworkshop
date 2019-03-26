@@ -245,7 +245,50 @@ app.post('/action-endpoint', function (req, res) {
 
 #### Connect this changes to Slack
 
-Add your changes to git. Now open in browser slack settings page and add your application url and new endpoint here:
+Add your changes to git. Now open in browser slack settings page and add your application url and new endpoint here \(request URL field\), also add "subscribe to bot events": "im\_created". This will allow new bot to read your messages and reply.
 
+![](.gitbook/assets/screenshot-2019-03-26-at-14.59.08.png)
 
+#### Change endpoint code
+
+It might be a bit confusing, but no worries, it is totally fine to be confused. This part is an essence of our bot functionality, so it takes a bit to wrap your head around it.
+
+```text
+app.post('/action-endpoint', function (req, res) {
+  const challenge = req.body.challenge; // this challenge is needed to ensure slack that our bot works
+  
+  const reply = {
+      "challenge": challenge
+  };
+
+  const headers = {
+    'Content-type': 'application/json',
+    'Authorization': `Bearer ${process.env.TOKEN}` // this token you need to set on he
+  }
+
+  // console.log(req.body.event);
+
+  if (req.body.event.subtype != 'bot_message') { // se we won't reply to ourselves...
+    const body = {
+      'channel': req.body.event.channel,
+      'text': 'Hello there'
+    }
+
+    const options = {
+      url:   'https://slack.com/api/chat.postMessage',
+      method: 'POST',
+      headers,
+      body:  JSON.stringify(body)
+    };
+
+    request.post(options, function(err, res, body) {
+      if (err) {
+        console.log(err);
+      }
+    })
+  }
+
+  res.json(reply);
+});
+```
 

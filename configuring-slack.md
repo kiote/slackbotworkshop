@@ -14,8 +14,6 @@ After creating the new app, you should be able to see page like that:
 
 ![New app credentials](.gitbook/assets/screenshot-2019-03-22-at-08.48.23.png)
 
-with all credentials listed. Save Client ID and Client Secret values, you are going to use them soon.
-
 ### Add Slack application permissions
 
 In order to be able to receive data from Slack, you need to add some permissions to the new app.
@@ -40,5 +38,11 @@ Adding a subscription will allow new bot to receive information from Slack. Add 
 
 To be able to interact with users, your app should have bot user. Let's add it:
 
-![](.gitbook/assets/screenshot-2019-03-26-at-10.47.30.png)
+![](.gitbook/assets/screenshot-2019-03-26-at-10.47.30%20%281%29.png)
+
+### Save bot token
+
+You'll need "Bot User OAuth Access Token" very soon, so either copy-paste it somewhere, or just memorize where to find it :\)
+
+![](.gitbook/assets/screenshot-2019-03-26-at-15.30.31.png)
 
