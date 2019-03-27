@@ -31,15 +31,15 @@ with this two commands we've initialised empty project, which does nothing so fa
 From the same command line, run
 
 {% tabs %}
-{% tab title="Windows" %}
+{% tab title="MacOs" %}
 ```text
-copy NUL main.js
+touch main.js
 ```
 {% endtab %}
 
-{% tab title="MacOS" %}
+{% tab title="Windows" %}
 ```text
-touch main.js
+copy NUL main.js
 ```
 {% endtab %}
 {% endtabs %}
