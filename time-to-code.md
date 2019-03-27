@@ -178,19 +178,17 @@ in command line, run
 node main.js
 ```
 
-in browser, open: "localhost:3000/", you should be able to see this page:
+in browser, open: "localhost:3000/"
 
-![](.gitbook/assets/screenshot-2019-03-22-at-17.05.04.png)
+#### First page on heroku
 
-#### Healthcheck on heroku
-
-In order to be able to see your healthcheck page on heroku, you should add this line to "package.json" file \(open it in your code editor\):
+In order to be able to see your first page on heroku, you should add this line to "package.json" file \(open it in your code editor\):
 
 ```text
 "start": "node main.js"
 ```
 
-whole file should look like that now:
+whole file should look like that now \(you only need to add 8th line, the rest you should have generated for you\):
 
 ```text
 {
@@ -200,7 +198,7 @@ whole file should look like that now:
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js"
+    "start": "node main.js" # <--- add this line
   },
   "repository": {
     "type": "git",
