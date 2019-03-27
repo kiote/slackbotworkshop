@@ -292,3 +292,62 @@ app.post('/action-endpoint', function (req, res) {
 });
 ```
 
+### Get currency rate
+
+So far we've achieved quite a lot, but our bot is not doing much, it is just replying "hello". Let's teach it how to reply with current currency rate \(EUR -&gt; BTC\).
+
+To do that, we will use open API from CoinDesk: [https://api.coindesk.com/v1/bpi/currentprice/EUR.json](https://api.coindesk.com/v1/bpi/currentprice/EUR.json)
+
+Change the code inside "if req.body..." \(lines 15-33 from code above should be replaced with that\):
+
+```text
+  if (req.body.event.subtype != 'bot_message') { // se we won't reply to ourselves...
+    request.get('https://api.coindesk.com/v1/bpi/currentprice/EUR.json', function(err, res, body) {
+      if (err) {
+        console.log(err);
+      }
+      else {
+        const coindesk = JSON.parse(body);
+        const rate = coindesk.bpi.EUR.rate;
+        const reply = {
+          'channel': req.body.event.channel,
+          text: `Current BTC rate: ${rate} EUR per 1 BTC`
+        }
+
+        const options = {
+          url:   'https://slack.com/api/chat.postMessage',
+          method: 'POST',
+          headers,
+          body:  JSON.stringify(reply)
+        };
+
+        console.log(body);
+    
+        request.post(options, function(err, res, body) {
+          if (err) {
+            console.log(err);
+          }
+        });
+      }
+    });
+  }
+```
+
+Add your changes to git.
+
+## Result
+
+After all these steps you should be able to see response from bot, doesn't matter what message you send, it will respond with current BTC rate. Very neat, isn't it? Congratulations, you made really great job following till the very last step!
+
+## What's next
+
+As a bonus step, you can modify the bot in a way, that it will be able to reply with amount of EUR in BTC you send it. 
+
+For example, the dialog might look like this:
+
+> you: 14 BTC
+>
+> bot: 14 BTC is 46 622 EUR
+
+There is no limits for your own fantasy now! 
+
