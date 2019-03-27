@@ -2,7 +2,7 @@
 
 ## Short overview
 
-Heroku is a hosting for your service. You need to use a hosting, since you bot are going to be online even if your computer is off, and you are sleeping and on vacation.
+Heroku is a hosting for your service. You need to use a hosting, since your bot is going to be online even if your computer is off, and you are sleeping and on vacation.
 
 ## Create new application
 

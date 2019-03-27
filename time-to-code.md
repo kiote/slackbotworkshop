@@ -141,11 +141,9 @@ git push
 We are going to refer this part very often, so when you see "add your changes to git" sentence, please execute the same commands in command line. You need to change text 'empty program' to whatever describes you are doing at the moment, for example 'new endpoint'
 {% endhint %}
 
-### Add healthcheck endpoint
+### Adding the first page
 
-At this point, our program should be already deployed to heroku, since we've configured autodeploy from master branch on "Heroku setup" step. But we have not that much ways to realise if it's actually running there. Just to be able to check that, we are going to add "healthcheck" endpoint.
-
-Endpoints are just some type of urls which open different parts of your program in web browser.
+At this point, our program should be already deployed to heroku, since we've configured autodeploy from master branch on "Heroku setup" step. But we have not that many ways to realise if it's actually running there. Just to be able to check that, we are going to add web page with short text.
 
 After first three lines add these lines to your main.js file:
 

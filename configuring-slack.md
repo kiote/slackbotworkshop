@@ -2,7 +2,7 @@
 
 ## Short overview
 
-On this step, we will configure Slack to be able to serve our new bot with messages. This configuration step is needed because or Slack bot going to receive data from Slack.
+On this step, we will configure Slack to be able to serve our new bot with messages. This configuration step is needed because our Slack bot is going to receive data from Slack.
 
 ## Create Slack App
 
