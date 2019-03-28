@@ -39,7 +39,7 @@ In the "Automatic deploys" section make sure that you have "master" branch selec
 
 To connect our hosting with slack app, one of the things we need to do is to add token we found on the step [https://kiote1.gitbook.io/slackbotworkshop/configuring-slack\#save-bot-token](https://kiote1.gitbook.io/slackbotworkshop/configuring-slack#save-bot-token) 
 
-To do that, go to [https://dashboard.heroku.com/apps/](https://dashboard.heroku.com/apps/), choose your app name and go to settings. Add toke into this field:
+To do that, go to [https://dashboard.heroku.com/apps/](https://dashboard.heroku.com/apps/), choose your app name and go to settings. Add a new field, name it "TOKEN" and paste the value into the second field:
 
 ![](.gitbook/assets/screenshot-2019-03-28-11.02.52.png)
 
