@@ -358,9 +358,13 @@ As a bonus step, you can modify the bot in a way, that it will be able to reply 
 
 For example, the dialog might look like this:
 
-> you: 14 BTC
+> you: 14
 >
 > bot: 14 BTC is 46 622 EUR
+
+{% hint style="info" %}
+You can use "req.body.event.text" to get the number and then apply some math on it, like "req.body.event.text \* rate" and send the result as a response
+{% endhint %}
 
 There is no limits for your own fantasy now! 
 
