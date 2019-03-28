@@ -139,7 +139,7 @@ git push
 ```
 
 {% hint style="info" %}
-We are going to refer this part very often, so when you see "add your changes to git" sentence, please execute the same commands in command line. You need to change text 'empty program' to whatever describes you are doing at the moment, for example 'new endpoint'
+We are going to refer this part very often, so when you see "add your changes to git" sentence, please execute the same three commands in the command line. You need to change text 'empty program' to whatever describes you are doing at the moment, for example 'new endpoint'
 {% endhint %}
 
 ### Adding the first page
@@ -268,7 +268,7 @@ app.post('/action-endpoint', function (req, res) {
   if (req.body.event.subtype != 'bot_message') { // se we won't reply to ourselves...
     const body = {
       'channel': req.body.event.channel,
-      'text': 'Hello there'
+      'text': req.body.event.text // going to reply with the same text 
     }
 
     const options = {
@@ -288,6 +288,22 @@ app.post('/action-endpoint', function (req, res) {
   res.json(reply);
 });
 ```
+
+Over here, if you try to read this code on more human-understandable language, it would be something like:
+
+> Line 1: Our bot will receive messages to the page with address "action-endpoint"
+>
+> Line 2: Save value from request for "challenge" into constant with name "challenge"
+>
+> Lines 4-6: Save challenge in a special format into constant named reply
+>
+> Lines 8-10: Make specially formatted headers, add TOKEN to these headers
+
+and etc...
+
+Even with this "translation" many points are not making any sense for you, and it is still quite confusing \(or, even more confusing\). 
+
+In that case, you need to know first what is request and response cycle and how it's been used in web applications. You can use for example this video as an explanation: [https://youtu.be/eesqK59rhGA?t=188](https://youtu.be/eesqK59rhGA?t=188)
 
 ### Get currency rate
 
