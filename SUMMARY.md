@@ -7,4 +7,5 @@
 * [Heroku setup](heroku-setup.md)
 * [Time to code!](time-to-code.md)
 * [Tips for coaches](coaches.md)
+* [I need help!](i-need-help.md)
 

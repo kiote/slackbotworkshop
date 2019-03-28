@@ -62,6 +62,7 @@ Type this into your main.js:
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const request = require('request');
 
 app.use(bodyParser.json());
 ```
@@ -186,7 +187,7 @@ In order to be able to see your first page on heroku, you should add this line t
 "start": "node main.js"
 ```
 
-whole file should look like that now \(you only need to add 8th line, the rest you should have generated for you\):
+whole file should look like that now \(you only need to add 8th line, the rest is already generated for you\):
 
 ```text
 {
