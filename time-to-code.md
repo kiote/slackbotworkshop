@@ -232,9 +232,9 @@ Now we need to create a part of the program, which will be interacting with slac
 
 ```text
 app.post('/action-endpoint', function (req, res) {
-  const challange = req.body.challange;
+  const challenge = req.body.challenge;
   const reply = {
-      "challange": challange
+      "challenge": challenge
   };
   res.json(reply);
 });
