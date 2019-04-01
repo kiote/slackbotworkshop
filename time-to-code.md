@@ -48,7 +48,7 @@ This command will create new empty file in the same folder.
 
 Now you need to open your code editor you've installed during the installation step and make it to open the folder, where your fresh npm project is.
 
-For that, open code editor's menu File -&gt; open and find a folder, for me it's here \(Snadbox/slack-bot-workshop\):
+For that, open code editor's menu File -&gt; open and find a folder, for me it's here \(Snadbox/slack-bot-workshop\): \(if you can't see the folder you are looking for, try to use Search\)
 
 ![](.gitbook/assets/screenshot-2019-03-22-at-16.13.25.png)
 
@@ -197,7 +197,7 @@ whole file should look like that now \(you only need to add 8th line, the rest i
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js" # <--- add this line
+    "start": "node main.js" // <--- add this line
   },
   "repository": {
     "type": "git",
