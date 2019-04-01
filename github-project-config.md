@@ -41,7 +41,7 @@ If all set, click "Create repository"
 5. Switch back to command line and enter:
 
 ```text
-git clone git@github.com:coingaming/slack-bot-workshop.git
+git clone https://github.com/coingaming/slack-bot-workshop.git
 ```
 
 6. Replace git@... with your own url, which you just have copied on the step 4, and press enter
